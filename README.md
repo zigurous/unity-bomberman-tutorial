@@ -1,9 +1,9 @@
-# Project Title
+# Bomberman (2D)
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh elit, iaculis id condimentum vitae, efficitur nec lorem. Nam convallis ligula vitae velit porta interdum. Donec euismod sem ligula, aliquet lacinia eros mollis molestie. Maecenas et enim mollis lacus ultrices consequat. Quisque vehicula id neque sit amet placerat. Etiam posuere vel ipsum vel tincidunt. Nulla et efficitur urna. Phasellus varius gravida velit non commodo. Vivamus sagittis commodo nibh vitae posuere.
+> Bomberman is a video game franchise originally released in Japan in July 1983. Bomberman gameplay involves strategically placing down bombs, which explode in multiple directions after a certain amount of time, in order to destroy obstacles and kill enemies and other players.
 
-- **Difficulty**:
-- **Topics**:
-- **Version**:
-- [**Download**]()
+- **Difficulty**: Intermediate
+- **Topics**: Tilemaps, AI
+- **Version**: Unity 2020.3 (LTS)
+- [**Download**](https://github.com/zigurous/unity-bomberman-tutorial/archive/refs/heads/main.zip)
 - [**Watch Video**](https://www.youtube.com/c/zigurous)
