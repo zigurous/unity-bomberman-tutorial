@@ -45,6 +45,8 @@ public class BombController : MonoBehaviour
         yield return new WaitForSeconds(bombFuseTime);
 
         position = bomb.transform.position;
+        position.x = Mathf.Round(position.x);
+        position.y = Mathf.Round(position.y);
 
         Explosion explosion = Instantiate(explosionPrefab, position, Quaternion.identity);
         explosion.SetActiveRenderer(explosion.start);
