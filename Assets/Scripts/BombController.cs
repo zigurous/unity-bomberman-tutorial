@@ -7,7 +7,7 @@ public class BombController : MonoBehaviour
     [Header("Bomb")]
     public GameObject bombPrefab;
     public float bombFuseTime = 3f;
-    public int bombAmount = 2;
+    public int bombAmount = 1;
     private int bombsRemaining;
 
     [Header("Explosion")]
