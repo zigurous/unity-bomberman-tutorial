@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 710774327073055155}
   - component: {fileID: 710774327073055153}
   - component: {fileID: 805732483383335703}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 5715887680712750926}
   - component: {fileID: 2067653447763455473}
   - component: {fileID: 6502963458885894632}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 9aff408f26cb05f479e3e9a8685d6bf1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56fd141a6cdb32d40876d52672683416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleSprite: {fileID: 0}
   animationSprites:
   - {fileID: 21300000, guid: 9aff408f26cb05f479e3e9a8685d6bf1, type: 3}
   - {fileID: 21300000, guid: 5f4034d375d3d1d44833fc1784527a9e, type: 3}
@@ -181,8 +182,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5f6c91829ad99674cb9fc77759226594, type: 3}
   - {fileID: 21300000, guid: 5f4034d375d3d1d44833fc1784527a9e, type: 3}
   - {fileID: 21300000, guid: 9aff408f26cb05f479e3e9a8685d6bf1, type: 3}
-  idleSprite: {fileID: 0}
   animationTime: 0.125
+  idle: 0
 --- !u!1 &2375951142342543708
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +195,7 @@ GameObject:
   - component: {fileID: 922338127356858063}
   - component: {fileID: 3738306069772654233}
   - component: {fileID: 6398714110581251344}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +255,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 9c0db09999b83de41aa856a280c09da5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -278,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56fd141a6cdb32d40876d52672683416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleSprite: {fileID: 0}
   animationSprites:
   - {fileID: 21300000, guid: 9c0db09999b83de41aa856a280c09da5, type: 3}
   - {fileID: 21300000, guid: bbb075fb218cbb749a231dcfc34020d4, type: 3}
@@ -288,8 +290,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 88909562ade90c742a75a2723b379f0b, type: 3}
   - {fileID: 21300000, guid: bbb075fb218cbb749a231dcfc34020d4, type: 3}
   - {fileID: 21300000, guid: 9c0db09999b83de41aa856a280c09da5, type: 3}
-  idleSprite: {fileID: 0}
   animationTime: 0.125
+  idle: 0
 --- !u!1 &2941661998231525673
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +303,7 @@ GameObject:
   - component: {fileID: 6454858912763549840}
   - component: {fileID: 7346553118777896165}
   - component: {fileID: 3772248313485759971}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +363,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 6b7698805f6781843b5fca45706e3387, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -385,6 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56fd141a6cdb32d40876d52672683416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleSprite: {fileID: 0}
   animationSprites:
   - {fileID: 21300000, guid: 6b7698805f6781843b5fca45706e3387, type: 3}
   - {fileID: 21300000, guid: a6d655e6677550d47a9fb7e08ed7581f, type: 3}
@@ -395,5 +398,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 123922815b285884c9c7343f70608efa, type: 3}
   - {fileID: 21300000, guid: a6d655e6677550d47a9fb7e08ed7581f, type: 3}
   - {fileID: 21300000, guid: 6b7698805f6781843b5fca45706e3387, type: 3}
-  idleSprite: {fileID: 0}
   animationTime: 0.125
+  idle: 0

@@ -11,10 +11,10 @@ TagManager:
   - Player
   - Water
   - UI
+  - Stage
   - Bomb
   - Explosion
-  - 
-  - 
+  - Item
   - 
   - 
   - 
