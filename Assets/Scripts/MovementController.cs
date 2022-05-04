@@ -1,6 +1,7 @@
 using UnityEngine;
 
-public class Player : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D))]
+public class MovementController : MonoBehaviour
 {
     private new Rigidbody2D rigidbody;
     private Vector2 direction = Vector2.down;
@@ -31,10 +32,6 @@ public class Player : MonoBehaviour
         } else {
             SetDirection(Vector2.zero, activeSpriteRenderer);
         }
-
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            PlaceBomb();
-        }
     }
 
     private void FixedUpdate()
@@ -56,10 +53,6 @@ public class Player : MonoBehaviour
 
         activeSpriteRenderer = spriteRenderer;
         activeSpriteRenderer.idle = direction == Vector2.zero;
-    }
-
-    private void PlaceBomb()
-    {
     }
 
 }

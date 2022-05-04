@@ -4,7 +4,8 @@ using UnityEngine;
 public class AnimatedSpriteRenderer : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
-    public Sprite[] walkSprites;
+
+    public Sprite[] animationSprites;
     public Sprite idleSprite;
 
     public float animationTime = 0.25f;
@@ -36,14 +37,14 @@ public class AnimatedSpriteRenderer : MonoBehaviour
     {
         animationFrame++;
 
-        if (animationFrame >= walkSprites.Length) {
+        if (animationFrame >= animationSprites.Length) {
             animationFrame = 0;
         }
 
         if (idle) {
             spriteRenderer.sprite = idleSprite;
-        } else if (animationFrame >= 0 && animationFrame < walkSprites.Length) {
-            spriteRenderer.sprite = walkSprites[animationFrame];
+        } else if (animationFrame >= 0 && animationFrame < animationSprites.Length) {
+            spriteRenderer.sprite = animationSprites[animationFrame];
         }
     }
 
