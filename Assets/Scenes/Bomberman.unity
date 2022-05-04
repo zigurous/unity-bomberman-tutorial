@@ -1441,7 +1441,7 @@ GameObject:
   - component: {fileID: 1431355504}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1466,7 +1466,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   explosionDuration: 1
-  explosionRadius: 2
+  explosionRadius: 1
   destructibleTiles: {fileID: 1169247074}
   destructiblePrefab: {fileID: -8738203639632321532, guid: 1ac7a5f8ae90ed04aa34c0753307c241, type: 3}
 --- !u!4 &1431355505
@@ -1515,7 +1515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1841e06630928734691e06011c8a3c89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  speed: 5
   spriteRendererUp: {fileID: 1861574218}
   spriteRendererDown: {fileID: 1698864495}
   spriteRendererLeft: {fileID: 183365827}

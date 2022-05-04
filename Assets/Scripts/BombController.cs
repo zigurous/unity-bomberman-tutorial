@@ -90,7 +90,12 @@ public class BombController : MonoBehaviour
             Instantiate(destructiblePrefab, position, Quaternion.identity);
             destructibleTiles.SetTile(cell, null);
         }
+    }
 
+    public void AddBomb()
+    {
+        bombAmount++;
+        bombsRemaining++;
     }
 
 }

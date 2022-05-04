@@ -5,7 +5,7 @@ public class MovementController : MonoBehaviour
 {
     private new Rigidbody2D rigidbody;
     private Vector2 direction = Vector2.down;
-    public float moveSpeed = 5f;
+    public float speed = 5f;
 
     public AnimatedSpriteRenderer spriteRendererUp;
     public AnimatedSpriteRenderer spriteRendererDown;
@@ -37,7 +37,7 @@ public class MovementController : MonoBehaviour
     private void FixedUpdate()
     {
         Vector2 position = rigidbody.position;
-        Vector2 translation = direction * moveSpeed * Time.fixedDeltaTime;
+        Vector2 translation = direction * speed * Time.fixedDeltaTime;
 
         rigidbody.MovePosition(position + translation);
     }
