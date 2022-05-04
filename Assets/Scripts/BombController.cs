@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 public class BombController : MonoBehaviour
 {
     [Header("Bomb")]
+    public KeyCode inputKey = KeyCode.LeftShift;
     public GameObject bombPrefab;
     public float bombFuseTime = 3f;
     public int bombAmount = 1;
@@ -27,7 +28,7 @@ public class BombController : MonoBehaviour
 
     private void Update()
     {
-        if (bombsRemaining > 0 && Input.GetKeyDown(KeyCode.Space)) {
+        if (bombsRemaining > 0 && Input.GetKeyDown(inputKey)) {
             StartCoroutine(PlaceBomb());
         }
     }
