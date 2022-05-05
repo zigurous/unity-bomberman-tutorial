@@ -11,7 +11,8 @@ public class AnimatedSpriteRenderer : MonoBehaviour
     public float animationTime = 0.25f;
     private int animationFrame;
 
-    public bool idle;
+    public bool loop = true;
+    public bool idle = true;
 
     private void Awake()
     {
@@ -37,7 +38,7 @@ public class AnimatedSpriteRenderer : MonoBehaviour
     {
         animationFrame++;
 
-        if (animationFrame >= animationSprites.Length) {
+        if (loop && animationFrame >= animationSprites.Length) {
             animationFrame = 0;
         }
 
