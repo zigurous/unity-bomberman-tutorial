@@ -8,11 +8,9 @@ public class Explosion : MonoBehaviour
 
     public void SetActiveRenderer(AnimatedSpriteRenderer renderer)
     {
-        start.enabled = false;
-        middle.enabled = false;
-        end.enabled = false;
-
-        renderer.enabled = true;
+        start.enabled = renderer == start;
+        middle.enabled = renderer == middle;
+        end.enabled = renderer == end;
     }
 
     public void SetDirection(Vector2 direction)
