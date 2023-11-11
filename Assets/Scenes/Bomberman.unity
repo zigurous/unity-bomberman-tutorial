@@ -1555,6 +1555,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5879614341149993121, guid: 6bdbecbdf34cd67488978d9895d00820, type: 3}
+      propertyPath: explosionRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879614341149993121, guid: 6bdbecbdf34cd67488978d9895d00820, type: 3}
       propertyPath: destructibleTiles
       value: 
       objectReference: {fileID: 1169247074}

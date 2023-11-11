@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class MovementController : MonoBehaviour
 {
-    private new Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
     private Vector2 direction = Vector2.down;
     public float speed = 5f;
 
@@ -23,7 +23,7 @@ public class MovementController : MonoBehaviour
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         activeSpriteRenderer = spriteRendererDown;
     }
 
@@ -44,10 +44,10 @@ public class MovementController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector2 position = rigidbody.position;
-        Vector2 translation = direction * speed * Time.fixedDeltaTime;
+        Vector2 position = rb.position;
+        Vector2 translation = speed * Time.fixedDeltaTime * direction;
 
-        rigidbody.MovePosition(position + translation);
+        rb.MovePosition(position + translation);
     }
 
     private void SetDirection(Vector2 newDirection, AnimatedSpriteRenderer spriteRenderer)
@@ -87,7 +87,7 @@ public class MovementController : MonoBehaviour
     private void OnDeathSequenceEnded()
     {
         gameObject.SetActive(false);
-        FindObjectOfType<GameManager>().CheckWinState();
+        GameManager.Instance.CheckWinState();
     }
 
 }
