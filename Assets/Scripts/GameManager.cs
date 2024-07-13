@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public GameObject[] players;
+    private GameObject[] players;
 
     private void Awake()
     {
@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
             DestroyImmediate(gameObject);
         } else {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
         }
     }
 
@@ -24,13 +23,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        players = GameObject.FindGameObjectsWithTag("Player");
+    }
+
     public void CheckWinState()
     {
         int aliveCount = 0;
 
-        foreach (GameObject player in players)
+        for (int i = 0; i < players.Length; i++)
         {
-            if (player.activeSelf) {
+            if (players[i].activeSelf) {
                 aliveCount++;
             }
         }
